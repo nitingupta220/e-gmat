@@ -1,0 +1,99 @@
+body {
+  font-family: 'Titillium Web', sans-serif; }
+
+.navbar {
+  padding: 0;
+  background-color: #275183;
+  font-size: 20px; }
+  .navbar .navbar-nav {
+    height: 80px; }
+    .navbar .navbar-nav .nav-item {
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 10px;
+      border-right: 1px solid #1F4776; }
+      .navbar .navbar-nav .nav-item .active {
+        background-color: #204776 !important; }
+      .navbar .navbar-nav .nav-item .nav-link {
+        color: white !important;
+        vertical-align: middle; }
+        .navbar .navbar-nav .nav-item .nav-link img {
+          margin-right: 10px; }
+        .navbar .navbar-nav .nav-item .nav-link span {
+          font-size: 16px; }
+
+main {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-bottom: 200px; }
+  main .nav-tabs {
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: #F4F6F8; }
+    main .nav-tabs .nav-link {
+      color: #28313C !important; }
+      main .nav-tabs .nav-link:focus {
+        font-weight: bolder; }
+  main .tab-content {
+    padding: 20px; }
+    main .tab-content .tab-pane .chartsDiv .col-6 {
+      border: 1px solid #E9EAEB;
+      border-radius: 4px;
+      position: relative;
+      top: 50px;
+      margin: 20px;
+      max-width: 600px; }
+      main .tab-content .tab-pane .chartsDiv .col-6 h5 {
+        position: relative;
+        top: -30px; }
+      main .tab-content .tab-pane .chartsDiv .col-6 .col-5 .container1 {
+        margin: 0 auto;
+        position: relative;
+        top: -50px; }
+      main .tab-content .tab-pane .chartsDiv .col-6 .col-5 .good label {
+        height: 20px;
+        width: 20px;
+        background-color: #22C064;
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-left: 10px; }
+      main .tab-content .tab-pane .chartsDiv .col-6 .col-5 .avg label {
+        height: 20px;
+        width: 20px;
+        background-color: #F7941D;
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-left: 10px; }
+      main .tab-content .tab-pane .chartsDiv .col-6 .col-5 .poor label {
+        height: 20px;
+        width: 20px;
+        background-color: #E74C3C;
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-left: 10px; }
+      main .tab-content .tab-pane .chartsDiv .col-6 .col-7 .table {
+        padding: 10px; }
+        main .tab-content .tab-pane .chartsDiv .col-6 .col-7 .table th {
+          background-color: #F4F6F8;
+          text-align: left; }
+        main .tab-content .tab-pane .chartsDiv .col-6 .col-7 .table tr,
+        main .tab-content .tab-pane .chartsDiv .col-6 .col-7 .table td {
+          border: 1px solid #E9EAEB;
+          padding: 20px; }
+        main .tab-content .tab-pane .chartsDiv .col-6 .col-7 .table tr:first-child td:nth-child(2) {
+          color: #ED1C24; }
+        main .tab-content .tab-pane .chartsDiv .col-6 .col-7 .table tr:nth-child(2) td:nth-child(2) {
+          color: #F89C39; }
+        main .tab-content .tab-pane .chartsDiv .col-6 .col-7 .table tr:nth-child(3) td:nth-child(2) {
+          color: #22C064; }
+    main .tab-content .tab-pane span {
+      color: #7B8188; }
+
+footer {
+  background-color: #E9ECEE;
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md  fixed-top">
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav">
+                <li class="nav-item text-right">
+                    <a href="#" class="nav-link">
+                        <img src="images/dashboard-icon.png" alt="">Dashboard
+                    </a>
+                </li>
+                <li class="nav-item active" style="background-color: #204776;">
+                    <a href="#" class="nav-link">
+                        <img src="images/activity.png" alt="">Skill Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/joystick.png" alt="">Attempts
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item text-right">
+                    <a href="#" class="nav-link">
+                        <span>Welcome,</span>
+                        <p>RSADANA1</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/notification.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/menu-icon.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#overall" role="tab" aria-controls="home" aria-selected="true" style="font-weight: bolder;">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#rc" role="tab" aria-controls="profile" aria-selected="false">Verbal RC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " id="contact-tab" data-toggle="tab" href="#cr" role="tab" aria-controls="contact" aria-selected="false">Verbal CR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#sc" role="tab" aria-controls="contact" aria-selected="false">Verbal SC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#ps" role="tab" aria-controls="contact" aria-selected="false">Quant PS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#ps1" role="tab" aria-controls="contact" aria-selected="false">Quant PS</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="overall" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Skill Data</h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid chartsDiv">
+                    <div class="row">
+                        <div class="col-6 col-sm-12 col-xs-12">
+                            <h5>Inference <span>(avg time 1 min 3 sec)</span></h5>
+                            <div class="row">
+                                <div class="col-5"  style="position: relative;top: -10px;">
+                                    <div id="container1"></div>
+                                    <div><span class="good"><label for="good"></label>Good</span><span class="avg"><label for="good"></label>Avg</span><span class="poor"><label for="good"></label>Poor</span></div>
+                                </div>
+                                <div class="col-7">
+                                    <table class="table table-responsive text-center">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Easy</th>
+                                                <td>15 / 20</td>
+                                                <td>1 min 3s</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Medium</th>
+                                                <td>8 / 15</td>
+                                                <td>55s</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Hard</th>
+                                                <td>7 / 15</td>
+                                                <td>1 min 15s</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-12 col-xs-12">
+                            <h5>Assumption <span>(avg time 1 min 3 sec)</span></h5>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div id="container2" style="position: relative;top: -10px;"></div>
+                                    <div><span class="good"><label for="good"></label>Good</span><span class="avg"><label for="good"></label>Avg</span><span class="poor"><label for="good"></label>Poor</span></div>
+                                </div>
+                                <div class="col-7">
+                                    <table class="table table-responsive text-center">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Easy</th>
+                                                <td>15 / 20</td>
+                                                <td>1 min 3s</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Medium</th>
+                                                <td>8 / 15</td>
+                                                <td>55s</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Hard</th>
+                                                <td>7 / 15</td>
+                                                <td>1 min 15s</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="rc" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="cr" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            <div class="tab-pane fade" id="sc" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            <div class="tab-pane fade" id="ps" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            <div class="tab-pane fade" id="ps1" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
+
+    </main>
+    <!-- /.container -->
+    <footer class="text-center">
+        <h5>Your Skill Data is improving. Good job!</h5>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

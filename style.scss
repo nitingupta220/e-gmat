@@ -1,0 +1,156 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar {
+    padding: 0;
+    background-color: #275183;
+    font-size: 20px;
+    .navbar-nav {
+        height: 80px;
+        .nav-item {
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 10px;
+            border-right: 1px solid #1F4776;
+            .active {
+                background-color: #204776 !important;
+            }
+            .nav-link {
+                color: white !important;
+                vertical-align: middle;
+                img {
+                    margin-right: 10px;
+                }
+                span {
+                    font-size: 16px;
+                }
+
+            }
+        }
+    }
+}
+
+main {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 200px;
+    .nav-tabs {
+        padding: 50px;
+        padding-bottom: 0;
+        background-color: #F4F6F8;
+        .nav-link {
+            color: #28313C !important;
+            &:focus {
+                font-weight: bolder;
+            }
+        }
+    }
+    .tab-content {
+        padding: 20px;
+        .tab-pane {
+            .chartsDiv {
+
+                .col-6 {
+                    border: 1px solid #E9EAEB;
+                    border-radius: 4px;
+                    position: relative;
+                    top: 50px;
+                    margin: 20px;
+                    max-width: 600px;
+                    
+                    h5 {
+                        position: relative;
+                        top: -30px
+                        
+                    }
+                    .col-5 {
+                        .container1 {
+                            margin: 0 auto;
+                            position: relative;
+                            top: -50px;
+
+                        }
+                        .good {
+                            label {
+                                height: 20px;
+                                width: 20px;
+                                background-color: #22C064;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: 10px;
+                            }
+                        }
+                        .avg {
+                            label {
+                                height: 20px;
+                                width: 20px;
+                                background-color: #F7941D;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: 10px;
+
+
+                            }
+                        }
+                        .poor {
+                            label {
+                                height: 20px;
+                                width: 20px;
+                                background-color: #E74C3C;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: 10px;
+
+                            }
+                        }
+
+                    }
+                    .col-7 {
+                        .table {
+                            padding: 10px;
+
+                            th {
+                                background-color: #F4F6F8;
+                                text-align: left;
+                            }
+                            tr,
+                            td {
+                                border: 1px solid #E9EAEB;
+                                padding: 20px;
+                            }
+                            tr:first-child {
+                                td:nth-child(2) {
+                                    color: #ED1C24;
+                                }
+                            }
+                            tr:nth-child(2) {
+                                td:nth-child(2) {
+                                    color: #F89C39;
+                                }
+                            }
+                            tr:nth-child(3) {
+                                td:nth-child(2) {
+                                    color: #22C064;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            span {
+                color: #7B8188;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #E9ECEE;
+    //    height: 100px;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
